@@ -3,14 +3,14 @@
 
 This repository contains the code of the video course [Ngrx (with NgRx Data) - The Complete Guide](https://angular-university.io/course/ngrx-course).
 
-This course repository is updated to Angular v13:
+This course repository is updated to Angular v19:
 
 ![Ngrx (with NgRx Data) - The Complete Guide](https://angular-university.s3-us-west-1.amazonaws.com/course-images/ngrx-v2.png)
 
 
 # Installation pre-requisites
 
-For taking the course we recommend installing Node 16 Long Term Support Edition (LTE).
+For taking the course we recommend installing Node 18 Long Term Support Edition (LTE).
 
 To easily switch between node versions on your machine, we recommend using a node virtual environment tool such as [nave](https://www.npmjs.com/package/nave) or [nvm-windows](https://github.com/coreybutler/nvm-windows), depending on your operating system. 
 
@@ -19,7 +19,7 @@ For example, here is how you switch to a new node version using nave:
     # note that you don't even need to update your node version before installing nave
     npm install -g nave
     
-    nave use 12.3.1
+    nave use 18.18.2
     node -v
     v12.3.1
 
@@ -34,7 +34,7 @@ With the following command the angular-cli will be installed globally in your ma
 
 We can install the master branch using the following commands:
 
-    git clone https://github.com/angular-university/angular-ngrx-course.git
+    git clone https://github.com/angular-university/ngrx-course.git
     
 This repository is made of several separate npm modules, that are installable separately. For example, to run the au-input module, we can do the following:
     
@@ -82,6 +82,11 @@ We can checkout the remote branch and start tracking it with a local branch that
 It's also possible to download a ZIP file for a given branch,  using the branch dropdown on this page on the top left, and then selecting the Clone or Download / Download as ZIP button.
 
 # Other Courses
+# Modern Angular With Signals
+
+If you are looking for the [Modern Angular With Signals Course](https://angular-university.io/course/angular-signals-course), the repo with the full code can be found here:
+
+![Modern Angular With Signals Course](https://d3vigmphadbn9b.cloudfront.net/course-images/large-images/angular-signals-course.jpg)
 
 # Angular Core Deep Dive Course
 
