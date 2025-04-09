@@ -17,7 +17,7 @@ import { StoreModule } from '@ngrx/store';
 import { metaReducers, reducers } from './store';
 import { AuthGuard } from './auth/auth.guard';
 import { RouterState, StoreRouterConnectingModule } from '@ngrx/router-store';
-
+import { EntityDataModule } from '@ngrx/data';
 
 const routes: Routes = [
   {
@@ -30,7 +30,6 @@ const routes: Routes = [
     redirectTo: '/'
   }
 ];
-
 
 
 @NgModule({
@@ -59,6 +58,7 @@ const routes: Routes = [
     }),
     StoreDevtoolsModule.instrument({ maxAge: 25, logOnly: !isDevMode() }),
     EffectsModule.forRoot([]),
+    EntityDataModule.forRoot({}),
     StoreRouterConnectingModule.forRoot({
       stateKey: 'router',
       routerState: RouterState.Minimal
